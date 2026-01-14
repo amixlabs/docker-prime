@@ -10,8 +10,8 @@ docker build \
   --build-arg "http_proxy=$http_proxy" \
   --build-arg "https_proxy=$https_proxy" \
   --build-arg "no_proxy=$no_proxy" \
-  -t amixlabs/prime:latest \
-  -t amixlabs/prime:1
+  -t amixsi/prime:latest \
+  -t amixsi/prime:1
   .
 ```
 
@@ -19,5 +19,5 @@ Publish
 
 ```bash
 docker login
-docker push amixlabs/prime
+docker push amixsi/prime
 ```

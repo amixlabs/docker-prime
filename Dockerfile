@@ -12,7 +12,8 @@ RUN apt-get install -y \
     tidy \
     gnupg \
     make \
-    xsltproc
+    xsltproc \
+    rsync
 
 COPY install.sh /usr/local/bin/
 RUN install.sh
