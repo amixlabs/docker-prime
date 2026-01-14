@@ -50,7 +50,7 @@ jobs:
         with:
           images: amixsi/prime
           tags: |
-            type=semver,pattern={{version}}
+            type=raw,value=${{ needs.release.outputs.new_release_version }}
             type=raw,value=latest
 
       - name: Build and Push
